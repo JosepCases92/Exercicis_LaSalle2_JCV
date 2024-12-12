@@ -26,30 +26,22 @@ class Perfil {
     // Aqui hay los metodos getter para acceder a los atributos de la clase
 
     public String getName() {
-        return name;
-    }
+        return name;}
     public String getStory() {
-        return story;
-    }
+        return story;}
     public ArrayList<String> getHobbies() {
-        return hobbies;
-    }
+        return hobbies;}
     public ArrayList<String> getFoods() {
-        return foods;
-    }
+        return foods;}
     public ArrayList<String> getFunFacts() {
-        return funFacts;
-    }
+        return funFacts;}
     public String formatStory() {
-        return "Mi Historia: " + story;
-    }
+        return "Mi Historia: " + story;}
     public String formatFavorites() {
-        return "Hobbies:\nFavoritos: " + hobbies + "\nComida: " + foods;
-    }
+        return "Hobbies:\nFavoritos: " + hobbies + "\nComida: " + foods;}
     public String formatRandomFunFact() {
         Random random = new Random();
-        return "Dato curioso: " + funFacts.get(random.nextInt(funFacts.size()));
-    }
+        return "Dato curioso: " + funFacts.get(random.nextInt(funFacts.size()));}
 }
 
 
@@ -102,8 +94,7 @@ public class Josep_Cases_Vilaseca_EX1 {
 
             while (!scanner.hasNextInt()) {
                 System.out.println("Opción invalida!");
-                scanner.next();
-            }
+                scanner.next();}
 
             option = scanner.nextInt();
 
@@ -121,8 +112,7 @@ public class Josep_Cases_Vilaseca_EX1 {
                     System.out.println("Has salido del programa :(");
                     break;
                 default:
-                    System.out.println("Opción invalida!");
-            }
+                    System.out.println("Opción invalida!");}
         } while (option != 4);
 
         scanner.close();
